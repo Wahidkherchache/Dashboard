@@ -22,6 +22,18 @@ ul {
     --red-col : #f44336;
     --graty-col : #888;
 }
+.c-orange {
+    color: var(--orang-col);
+}
+.c-blue {
+    color: var(--blue-col);
+}
+.c-green {
+    color: var(--green-col);
+}
+.c-red {
+    color: var(--red-col);
+}
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -447,4 +459,85 @@ ul {
     width: 200px;
     }
 
+}
+.Statistics i {
+    margin-bottom: 7px;
+}
+.Statistics p {
+    margin: 5px 0;
+    margin-bottom: 8px;
+    color: #777;
+    font-size: 14px;
+}
+.Statistics span {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.Statistics #total {
+    transition: border-color 0.3s ease;
+}
+.Statistics #total:nth-child(1):hover {
+    border-color: var(--orang-col) ;
+}
+.Statistics #total:nth-child(2):hover {
+    border-color: var(--blue-col) ;
+}
+.Statistics #total:nth-child(3):hover {
+    border-color: var(--green-col) ;
+}
+.Statistics #total:nth-child(4):hover {
+    border-color: var(--red-col) ;
+}
+.Latest-new img {
+    width: 116px;
+    height: 67px;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+.Latest-new h4 {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #000;
+}
+.Latest-new p {
+    margin: 0;
+    padding: 5px 0;
+    color: #777;
+    font-size: 14px;
+}
+.Latest-new span {
+    background-color: #ddd;
+    margin-top: 10px;
+    height: fit-content;
+    padding: 8px;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#news:not(:last-child) {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+}
+.done h4, 
+.done p {
+    text-decoration: line-through;
+}
+.Latest-Tasks i {
+    transition: color 0.3s ease;
+    cursor: pointer;
+    height: fit-content;
+    margin: 13px 0;
+}
+.Latest-Tasks i:hover {
+    color: var(--red-col);
+}
+#task {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
 }
