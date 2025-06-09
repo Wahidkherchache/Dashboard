@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --blue-col : #0075ff;
+    --blue-alt-col : #0d69d5;
+    --orang-col : #f59e0b;
+    --green-col : #22c55e;
+    --red-col : #f44336;
+    --graty-col : #888;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-col);
+}
+/* 4. عند التمرير Hover على الـ Thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-alt-col);
+}
+.page {
+    min-height: 300vh;
+}
+.page .sidebar #first {
+    margin-bottom: 40px;
+}
+.page #first::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -19px;
+    left: 44%;
+    border: 4px solid white;
+}
+.page #first::before {
+    content: "";
+    width: 62px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: -11px;
+    left: 28%;
+}
+.sidebar ul li a {
+    transition: background-color 0.3s ease;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #f6f6f6;
+}
+.sidebar ul li i {
+    margin-right: 10px
+}
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+        padding: 7px;
+    }
+    .sidebar span {
+        display: none;
+    }
+    .sidebar #first {
+        margin-bottom: 15px;
+        margin-left: -2px;
+    }
+    .sidebar #first::after,
+    .sidebar #first::before {
+        display: none;
+    }
+    .sidebar ul li i {
+        display: flex;
+    }
+    .sidebar ul li a {
+        padding: 10px;
+        text-align: center;
+        width: 35px;
+    }
+}
+#head {
+    margin-bottom: 60px;
+}
+.content .head img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.content .head input[type="search"] {
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 12px ;
+    padding-left: 45px;
+    width: 160px;
+    transition: width 0.4s ease ,
+                border-color 0.4s ease;
+}
+
+.content .head input[type="search"]:focus {
+    width: 180px;
+    border-color: var(--blue-col);
+}
+
+.content .head input[type="search"]::placeholder {
+    color: #aaa;
+}
+.content .head #sea i {
+    position: absolute;
+    z-index: 1; 
+    color: #aaa; 
+    top: 10px; 
+    left: 10px;
+}
+
+#user i {
+    position: absolute; 
+    left: -50px;
+    top: 15px;
+    cursor: pointer;
+}
+#user::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    position: absolute;
+    left: -33px;
+    top: 0px;
+}
+.content #tit {
+    position: relative;
+    margin: 15px;
+    margin-bottom: 25px;
+}
+.content #tit::before ,
+.content #tit::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    height: 3px;
+    left: 2px;
+}
+.content #tit::before {
+    width: 145px;
+    background-color: white;
+}
+.content #tit::after {
+    width: 105px;
+    background-color: #000;
+}
+#img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    position: absolute;
+    top: -81px;
+    left: 21px;
+    border: 2px solid white;
+}
+#but {
+    background-color: var(--blue-col);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    transition: background-color 0.3s ease;
+}
+#but:hover {
+    background-color: var(--blue-alt-col);
+}
+.welcome {
+    overflow: hidden;
+}
+#titl {
+    margin-bottom: 20px;
+    outline: none;
+    border-color: transparent;
+    background-color: #eee;
+    border-radius: 7px;
+}
+#tought {
+    margin-bottom: 20px;
+    padding-bottom: 95px;
+    outline: none;
+    border-color: transparent;
+    background-color: #eee;
+    border-radius: 7px;
+}
+#tousu {
+    width: fit-content;
+    position: absolute;
+    bottom: -45px;
+    right: 0;
+    outline: none;
+    color: white;
+    background-color: var(--blue-col);
+    border-color: transparent;
+}
+#info {
+    position: absolute;
+    top: -56px;
+    right: 10px;
+    border-radius: 9px;
+    z-index: 2;
+}
+#info h4 {
+    margin: 0;
+    padding-left: 6px;
+    
+}
+#info #po {
+    margin: 6px 0;
+    color: #777;
+    padding-left: 6px;
+}
+#info li {
+    margin: 10px 0;
+    color: rgb(53, 53, 53);
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#info i {
+    margin-right: 6px;
+    color: #777;
+}
+#hr1,
+#hr2 {
+    position: relative;
+}
+#hr1::before {
+    content: "";
+    position: absolute;
+    width: 179px;
+    height: 1px;
+    background-color: #ddd;
+    top: -9px;
+    left: -10px;
+}
+#hr2::before {
+    content: "";
+    position: absolute;
+    width: 179px;
+    height: 1px;
+    background-color: #ddd;
+    top: 36px;
+    left: -10px;
+}
+#log i{
+    color: #f44336;
+}
+#log {
+    margin: 6px 0;
+    color: #777;
+    padding-left: 6px;
+    color: #f44336;
+    cursor: pointer;
+}
+#noti {
+    top: -55px;
+    right: 72px;
+    border-radius: 9px;
+    height: auto;
+    width: 325px;
+}
+@media screen and (max-width: 768px) {
+    #noti {
+        right: 12px;
+    }
+}
+#noti h3 {
+    margin: 0;
+    padding: 2px;
+        margin-top: -5px;
+}
+#noti p {
+    margin: 0;
+    padding: 3px;
+    color: #777;
+    line-height: 1.6rem;
+    margin-left: 5px;
+}
+#noti h4 {
+    padding-left: 6px;
+    color: #000;
+    font-size: 16px;
+    margin: 5px 0;
+}
+#noti #p1 {
+    margin-top: -5px;
+    color: var(--blue-col);
+    cursor: pointer;
+}
+#p1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -186px;
+    height: 2px;
+    width: 325px;
+    background-color: #ddd;
+}
+#noti i {
+    margin-right: 6px;
+}
+#poin::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--blue-col);
+}
+#lo #las {
+    text-align: center;
+    margin: 0;
+    padding: 3px;
+    margin-top: 5px;
+    padding-top: 10px;
+    color: var(--blue-col);
+    position: relative;
+    cursor: pointer;
+}
+#lo #las::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 325px;
+    height: 2px;
+    background-color: #ddd;
+}
+#tousu {
+    transition: all 0.4s ease;
+}
+#tousu:hover {
+    background-color: var(--blue-alt-col);
+}
+.targets .i {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    background-color: #0077ff63;
+}
+.targets .i i{
+    color: var(--blue-col);
+}
+.targets .content .progers {
+    width: 400px;
+    height: 17px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    margin: 6px 0;
+    background-color: #0077ff63;
+}
+.targets .content .progers span {
+    display: block;
+    height: 100%;
+    background: var(--blue-col); /* لون أزرق */
+    border-radius: 3px;
+}
+
+.targetss .i {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    background-color: #f59f0b63;
+}
+.targetss .i i{
+    color: var(--orang-col);
+}
+.targetss .content .progers {
+    width: 400px;
+    height: 17px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    margin: 6px 0;
+    background-color: #f59f0b63;
+}
+.targetss .content .progers span {
+    display: block;
+    height: 100%;
+    background: var(--orang-col); /* لون أزرق */
+    border-radius: 3px;
+}
+
+.targetsss .i {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    background-color: #22c55e67;
+}
+.targetsss .i i{
+    color: var(--green-col);
+}
+.targetsss .content .progers {
+    width: 400px;
+    height: 17px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    margin: 6px 0;
+    background-color: #22c55e67;
+}
+.targetsss .content .progers span {
+    display: block;
+    height: 100%;
+    background: var(--green-col); /* لون أزرق */
+    border-radius: 3px;
+}
+@media screen and (max-width: 767px) {
+    .targetsss .content .progers,
+    .targetss .content .progers,
+    .targets .content .progers {
+    width: 200px;
+    }
+
+}

@@ -1,0 +1,152 @@
+.bg-eee {
+    background-color: #eee;
+}
+.pad-20 {
+    padding: 20px;
+}
+.pad-10 {
+    padding: 10px;
+}
+.mar-10 {
+    margin: 10px;
+}
+.mar-20 {
+    margin: 20px;
+}
+.fot-14 {
+    font-size: 14px;
+}
+.col-b {
+    color: #000;
+}
+.fo-bol {
+    font-weight: bold;
+}
+.bord-r {
+    border-radius: 6px;
+}
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.bg-white {
+    background-color: #fff;
+}
+.p-ril {
+    position: relative;
+}
+.p-abs {
+    position: absolute;
+}
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    box-shadow: 0 0 10px #ddd;
+}
+.text-c {
+    text-align: center;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mar-b {
+    margin-bottom: 20px;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.between {
+    justify-content: space-between;
+}
+.f-width {
+    width: 100%;
+}
+.mar-15 {
+    margin: 15px;
+}
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+    margin: 0 20px;
+}
+.d-grid {
+    display: grid;
+}
+.gap-20 {
+    gap: 20px;
+}
+.mar-tb {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.mar-lr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.mar-top0 {
+    margin-top: 0
+}
+.mar-b10 {
+    margin-bottom: 10px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.border-tb {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.border-b {
+    border-bottom: 1px solid #ddd;
+}
+@media screen and (max-width: 768px) {
+    .block-mob {
+        display: block;
+    }
+    .text-c-mob {
+        text-align: center;
+    }   
+    .wrapper {
+    grid-template-columns: minmax(200px,1fr);
+    margin: 0 10px;
+    gap: 10px;
+}
+}
+.c-gray {
+    color: #777;
+}
+.box-s {
+    box-shadow: 0 0 10px #ddd;
+}
+.mar-0 {
+    margin: 0;
+}
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.font-wb {
+    font-weight: bold;
+}
+.block {
+    display: block;
+}

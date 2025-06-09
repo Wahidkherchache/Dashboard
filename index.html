@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/freamwork.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body class="bg-eee">
+    <div class="page flex">
+        <!-- this is sidebar -->
+        <div class="sidebar bg-white pad-20 p-ril">
+            <h3 class="p-ril text-c mt-0 mar-20 p-ril" id="first">Wahid</h3>
+            <ul class="list">
+                <li class="">
+                    <a href="" class="flex align-center active bord-r pad-10 col-b mar-10 fots-14 ">
+                    <i class="far fa-regular fa-chart-bar fa-fw"></i>
+                    <span>Dashboard</span>
+                    </a>
+                </li>
+                
+                <li class="">
+                    <a href="" class="flex align-center  bord-r pad-10 col-b mar-10 fots-14 ">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span>Setting</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="" class="flex align-center  bord-r pad-10 col-b mar-10 fots-14 ">
+                    <i class="fa-regular fa-user fa-fw"></i>
+                    <span>Profile</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="" class="flex align-center  bord-r pad-10 col-b mar-10 fots-14 ">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span>Projects</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="" class="flex align-center  bord-r pad-10 col-b mar-10 fots-14 ">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <span>Courses</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="" class="flex align-center  bord-r pad-10 col-b mar-10 fots-14 ">
+                    <i class="far fa-regular fa-circle-user fa-fw"></i>
+                    <span>Friends</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="" class="flex align-center  bord-r pad-10 col-b mar-10 fots-14 ">
+                    <i class="far fa-regular fa-file fa-fw"></i>
+                    <span>Files</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="" class="flex align-center  bord-r pad-10 col-b mar-10 fots-14 ">
+                    <i class="far fa-regular fa-credit-card fa-fw"></i>
+                    <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content f-width">
+            <div class="head bg-white pad-20 flex-between f-width" id="head">
+                <div class="flex align p-ril" id="sea">
+                    <input type="search" name="search"  placeholder="Search..." onblur="this.placeholder='Search...'" onfocus="this.placeholder=''" class="pad-10 fots-14 p-ril">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div id="user" class="flex align p-ril">
+                    <i class="fa-regular fa-bell fa-lg" id="notiff"></i>
+                    <img src="/images/avatar.png" alt="" id="img-us">
+                </div>
+            </div>
+            <div class="p-ril">
+                <h1 id="tit">Dashboard</h1>
+                <div class="information bg-white pad-10 flex flex-col p-abs" id="info" style="display: none;">
+                    <div>
+                        <h4>Abdelouahid</h4>
+                        <p id="po">wahid@example.com</p>
+                    </div>
+                    <ul>
+                        <li id="hr1"><i class="fa-regular fa-user fa-fw"></i>Profile</li>
+                        <li><i class="fa-solid fa-envelope fa-fw"></i>Messages</li>
+                        <li id="hr2"><i class="fa-solid fa-gear fa-fw"></i>Settings</li>
+                    </ul>
+                    <p id="log"><i class="fa-solid fa-arrow-right-from-bracket fa-fw"></i>Log out</p>
+                </div>
+                <!-- this is nutification not comple -->
+                <div class="notification bg-white pad-10 flex flex-col p-abs over-y" id="noti" style="display: none;">
+                    <div class="flex between pad-10 fots-14 mar-0" id="noti-head">
+                        <h3>Notifications</h3>
+                        <p id="p1" class="p-ril">Mark all as read</p>
+                    </div>
+                    <div class="noti-item flex align flex-col">
+                        <h4 class="fots-14"><i class="fa-solid fa-circle-info fa-fw"></i>New Order #1234</h4>
+                        <p id="poin" class="p-ril">A new order has been placed</p>
+                        <p>5 minutes ago</p>
+                    </div>
+                    <div class="noti-item flex align flex-col">
+                        <h4 class="fots-14"><i class="fa-solid fa-circle-info fa-fw"></i>Payment Received</h4>
+                        <p>Payment of $299 has been received</p>
+                        <p>2 hours ago</p>
+                    </div>
+                    <div id="lo">
+                        <p id="las">view all notification</p>
+                    </div>
+                </div>
+                <!-- the end of nutification -->
+            </div>
+            
+            <div class="wrapper d-grid gap-20">
+                <div class="welcome bg-white text-c-mob block-mob box-s bord-r">
+                    <div class="intro pad-20 bg-eee flex between">
+                        <div>
+                            <h2>welcome</h2>
+                            <p class="c-gray">ouahid</p>
+                        </div>
+                        <img src="images/welcome.png" alt="">
+                    </div>
+                    <div class="stats pad-20 bg-white flex between mar-tb border-tb mar-lr p-ril">
+                        <img src="images/avatar.png" id="img" alt="">
+                        <div class="stat-item">
+                            <h4 class="fots-14">Ouahid</h4>
+                            <p class="c-gray">Developer</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="fots-14">50</h4>
+                            <p class="c-gray">projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="fots-14">$5000</h4>
+                            <p class="c-gray">Earned</p>
+                        </div>
+                        <button id="but">Profile</button>
+                    </div>
+                </div>
+                <div class="Quick-draft bg-white text-c-mob block-mob box-s bord-r flex flex-col pad-20">
+                    <div>
+                        <h2 class="fots-14">Quick Draft</h2>
+                        <p class="c-gray">Write a new post</p>
+                    </div>
+                    <div class="form flex flex-col gap-10 mar-tb p-ril">
+                            <input type="text" name="title" id="titl" placeholder="Title" class="pad-10 fots-14 p-ril">
+                            <input type="text" name="your tought" id="tought" placeholder="Your tought" class="pad-10 fots-14 p-ril">
+                            <button type="submit" id="tousu" class="btn bg-blue col-white pad-10 bord-r" style="cursor: pointer;">Publish</button>
+                    </div>
+                </div>
+                <div class="Yearly-Targets bg-white text-c-mob block-mob box-s bord-r pad-20">
+                        <h2 class="mar-top0 mar-b10">Yearly Targets</h2>
+                        <p class="c-gray">Targets Of The Year</p>
+                    <div class="targets center-flex mar-b10">
+                        <div class="i center-flex">
+                            <i class="fa-solid fa-dollar-sign fa-lg"></i>
+                        </div>
+                        <div class="content">
+                            <span class="block c-gray mar-b10">Money</span>
+                            <span class="block font-wb mar-b10">20 000$</span>
+                            <!-- <div class="progers"><span style="width: 80%;" data-target="80%"></span></div> -->
+                            <div class="progers">
+                                <span style="width: 90%" data-progress="90%"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="targetss center-flex mar-b10">
+                        <div class="i center-flex">
+                            <i class="fa-solid fa-dollar-sign fa-lg"></i>
+                        </div>
+                        <div class="content">
+                            <span class="block c-gray mar-b10">Projects</span>
+                            <span class="block font-wb mar-b10">24</span>
+                            <!-- <div class="progers"><span style="width: 80%;" data-target="80%"></span></div> -->
+                            <div class="progers">
+                                <span style="width: 55%" data-progress="55%"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="targetsss center-flex ">
+                        <div class="i center-flex">
+                            <i class="fa-solid fa-dollar-sign fa-lg"></i>
+                        </div>
+                        <div class="content">
+                            <span class="block c-gray mar-b10">Team</span>
+                            <span class="block font-wb mar-b10">12</span>
+                            <!-- <div class="progers"><span style="width: 80%;" data-target="80%"></span></div> -->
+                            <div class="progers">
+                                <span style="width: 75%" data-progress="75%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Tickets-Statistics bg-white text-c-mob block-mob box-s bord-r pad-20">
+                    <h2></h2>
+                    <p></p>
+                    <div class="container">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
